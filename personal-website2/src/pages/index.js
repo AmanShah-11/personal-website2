@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import HeroSection from "../components/HeroSection";
+import InfoSection from "../components/InfoSection";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 
@@ -12,11 +13,12 @@ const Home = () => {
   };
 
   return (
-    <Router>
-      <Sidebar isOpen={isOpen} toggle={toggle} />
+    <>
+      {/* <Sidebar isOpen={isOpen} toggle={toggle} /> */}
       <Navbar toggle={toggle} />
       <HeroSection />
-    </Router>
+      <InfoSection />
+    </>
   );
 };
 
