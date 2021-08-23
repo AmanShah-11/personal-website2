@@ -9,13 +9,8 @@ const ProjectModal = ({ showModal, handleClose, data }) => {
   const { title, description, github } = data;
   return (
     <>
-      <Modal
-        show={showModal}
-        onHide={handleClose}
-        backdrop="static"
-        keyboard={false}
-      >
-        <Modal.Header closeButton>
+      <Modal show={showModal} onHide={handleClose} keyboard={false}>
+        <Modal.Header>
           <Modal.Title>{title}</Modal.Title>
         </Modal.Header>
         <CustomModalBody bsPrefix="modal-title" dialogClassName="modalbody">
@@ -27,7 +22,6 @@ const ProjectModal = ({ showModal, handleClose, data }) => {
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          <Button variant="primary">Understood</Button>
         </Modal.Footer>
       </Modal>
     </>

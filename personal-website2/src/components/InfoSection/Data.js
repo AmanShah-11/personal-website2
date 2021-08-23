@@ -7,10 +7,10 @@ export const homeObjOne = {
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
-  topLine: "Premium Bank",
-  headline: "Unlimited Transactions with zero fees",
-  description:
-    "Get access to our exclusive app that allows you to send unlimited transactions without getting charged any fees",
+  topLine: "Learn more:",
+  headline: "About Me!",
+  description: `I'm a 2nd year Computer Engineering student at the Univesity of Waterloo. \n
+I focus on development in Python and enjoy using the React and Django frameworks.`,
   buttonLabel: "Get started",
   imgStart: false,
   img: img1,
