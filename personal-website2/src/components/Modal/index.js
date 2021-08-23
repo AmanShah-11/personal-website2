@@ -3,34 +3,22 @@ import "bootstrap/dist/css/bootstrap.css";
 
 import React, { useState } from "react";
 
-const ProjectModal = () => {
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => {
-    setShow(false);
-  };
-
-  const handleShow = () => setShow(true);
-
+const ProjectModal = ({ showModal, handleClose, data }) => {
+  const { title, description, github } = data;
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
-        Launch static backdrop modal
-      </Button>
       <Modal
-        show={show}
+        show={showModal}
         onHide={handleClose}
         backdrop="static"
         keyboard={false}
       >
         <Modal.Header closeButton>
-          <Modal.Title>Modal title</Modal.Title>
+          <Modal.Title>{title}</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
-          I will not close if you click outside me. Don't even try to press
-          escape key.
-        </Modal.Body>
+        <Modal.Body>{description}</Modal.Body>
         <Modal.Footer>
+          <a href={github}>Link to github</a>
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
