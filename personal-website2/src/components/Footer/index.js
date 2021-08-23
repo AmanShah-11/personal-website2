@@ -27,7 +27,7 @@ const Footer = () => {
     <>
       <FooterContainer>
         <FooterWrap>
-          <FooterLinksContainer>
+          {/* <FooterLinksContainer>
             <FooterLinksWrapper>
               <FooterLinkItems>
                 <FooterLinkTitle>About us</FooterLinkTitle>
@@ -64,7 +64,7 @@ const Footer = () => {
                 <FooterLink to="/signin">Terms of services</FooterLink>
               </FooterLinkItems>
             </FooterLinksWrapper>
-          </FooterLinksContainer>
+          </FooterLinksContainer> */}
           <SocialMedia>
             <SocialMediaWrap>
               <SocialLogo to="/">dolla</SocialLogo>
