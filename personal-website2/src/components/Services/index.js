@@ -53,13 +53,27 @@ The things used to build this application include:
     },
     {
       title: "Facial Recognition System",
-      description: "Very lengthy description for my project",
-      github: "https://github.com/AmanShah-11/django-google",
+      description: `I made this project using AWS, Python, Django for the backend system and React for the frontend system. \n
+What this does it that it looks for existing users in the system and sees if the current user matches with the one present. \n
+If a match has occured, the user is allowed into the system, otherwise the user is locked from the system for a certain amount of time.`,
+      github: "https://github.com/AmanShah-11/django_opencv",
     },
     {
       title: "Bank Loan System",
-      description: "Very lengthy description for my project",
-      github: "https://github.com/AmanShah-11/django-google",
+      description: `This project uses python, tensorflow and Django to determine whether a user would be approved or rejected for a loan. \n
+The front-end form is built in Django, with the machine learning model built in Tensorflow, and all of the data manipulation done in python libraries such as pandas, numpy, scipy and tensorflow. \n
+The machine learning model takes in 13 different factors from the user including:
+  Dependents
+  Applicant and CoApplicant Income
+  LoanAmount
+  Loan_Amount_Term
+  Credit_History
+  Gender
+  Married
+  Education
+  Self_Employed
+  Property_Area`,
+      github: "https://github.com/AmanShah-11/django_bankloan",
     },
   ];
 
@@ -82,13 +96,15 @@ The things used to build this application include:
           </ServicesCard>
           <ServicesCard onClick={() => handleShow(1)}>
             <ServicesIcon src={Icon5} />
-            <ServicesH2>Virtual offices</ServicesH2>
-            <ServicesP>Access our platform online anywhere!</ServicesP>
+            <ServicesH2>Facial Recognition System</ServicesH2>
+            <ServicesP>
+              Login to your system using facial recognition!
+            </ServicesP>
           </ServicesCard>
           <ServicesCard onClick={() => handleShow(2)}>
             <ServicesIcon src={Icon6} />
-            <ServicesH2>Premium Benefits</ServicesH2>
-            <ServicesP>Unlock our special membership cards!</ServicesP>
+            <ServicesH2>Bank Loan Approval System</ServicesH2>
+            <ServicesP>See if you would be approved for a bank loan!</ServicesP>
           </ServicesCard>
         </ServicesWrapper>
       </ServicesContainer>
