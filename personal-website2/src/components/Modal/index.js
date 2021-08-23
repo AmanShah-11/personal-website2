@@ -1,7 +1,9 @@
-import { Button, Modal } from "react-bootstrap";
+import { Button, Modal, ModalBody } from "react-bootstrap";
+import { FaGithub } from "react-icons/fa";
 import "bootstrap/dist/css/bootstrap.css";
 
 import React, { useState } from "react";
+import { CustomModalBody } from "./ModalElements";
 
 const ProjectModal = ({ showModal, handleClose, data }) => {
   const { title, description, github } = data;
@@ -16,8 +18,11 @@ const ProjectModal = ({ showModal, handleClose, data }) => {
         <Modal.Header closeButton>
           <Modal.Title>{title}</Modal.Title>
         </Modal.Header>
-        <Modal.Body>{description}</Modal.Body>
+        <CustomModalBody bsPrefix="modal-title" dialogClassName="modalbody">
+          {description}
+        </CustomModalBody>
         <Modal.Footer>
+          <FaGithub />
           <a href={github}>Link to github</a>
           <Button variant="secondary" onClick={handleClose}>
             Close
