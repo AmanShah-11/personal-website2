@@ -49,7 +49,7 @@ const Navbar = ({ toggle }) => {
                 <NavLinks
                   to="about"
                   smooth={true}
-                  duration={500}
+                  duration={20}
                   spy={true}
                   exact="true"
                   offset={-80}
@@ -61,7 +61,7 @@ const Navbar = ({ toggle }) => {
                 <NavLinks
                   to="discover"
                   smooth={true}
-                  duration={500}
+                  duration={20}
                   spy={true}
                   exact="true"
                   offset={-80}
@@ -73,7 +73,7 @@ const Navbar = ({ toggle }) => {
                 <NavLinks
                   to="services"
                   smooth={true}
-                  duration={500}
+                  duration={20}
                   spy={true}
                   exact="true"
                   offset={-80}
