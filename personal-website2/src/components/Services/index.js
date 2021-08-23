@@ -17,13 +17,13 @@ const Services = () => {
   return (
     <>
       <ServicesContainer id="services">
-        <ServicesH1>Our Services</ServicesH1>
+        <ServicesH1>My Projects</ServicesH1>
         <ServicesWrapper>
           <ServicesCard>
             <ServicesIcon src={Icon4} />
-            <ServicesH2>Reduce expenses</ServicesH2>
+            <ServicesH2>Automatic Event Scheduler</ServicesH2>
             <ServicesP>
-              We help reduce your fees and increase your overall revenue
+              Event Scheduler that adds to your Google Calendar automatically
             </ServicesP>
           </ServicesCard>
           <ServicesCard>
