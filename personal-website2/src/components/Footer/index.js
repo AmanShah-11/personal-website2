@@ -5,7 +5,9 @@ import {
   FaYoutube,
   FaTwitter,
   FaLinkedin,
+  FaGithub,
 } from "react-icons/fa";
+
 import {
   FooterContainer,
   FooterLink,
@@ -67,27 +69,29 @@ const Footer = () => {
           </FooterLinksContainer> */}
           <SocialMedia>
             <SocialMediaWrap>
-              <SocialLogo to="/">dolla</SocialLogo>
-              <WebsiteRights>my rights</WebsiteRights>
+              {/* <SocialLogo to="/">dolla</SocialLogo> */}
+              {/* <WebsiteRights>my rights</WebsiteRights> */}
               <SocialIcons>
-                <SocialIconLink href="/" target="_blank" aria-label="Facebook">
-                  <FaFacebook />
-                </SocialIconLink>
-                <SocialIconLink href="/" target="_blank" aria-label="Instagram">
+                <SocialIconLink
+                  href="https://www.instagram.com/aman.shah11/"
+                  target="_blank"
+                  aria-label="Instagram"
+                >
                   <FaInstagram />
                 </SocialIconLink>
-                <SocialIconLink href="/" target="_blank" aria-label="Youtube">
-                  <FaYoutube />
+                <SocialIconLink
+                  href="https://www.linkedin.com/in/amanshah11/"
+                  target="_blank"
+                  aria-label="Linkedin"
+                >
+                  <FaLinkedin />
                 </SocialIconLink>
                 <SocialIconLink
-                  href="//www.twitter.com/something"
+                  href="//www.github.com/AmanShah-11/"
                   target="_blank"
-                  aria-label="Twitter"
+                  aria-label="Github"
                 >
-                  <FaTwitter />
-                </SocialIconLink>
-                <SocialIconLink href="/" target="_blank" aria-label="Linkedin">
-                  <FaLinkedin />
+                  <FaGithub />
                 </SocialIconLink>
               </SocialIcons>
             </SocialMediaWrap>
