@@ -42,7 +42,7 @@ const InfoSection = ({
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
-                <BtnWrap>
+                {/* <BtnWrap>
                   <Button
                     to="home"
                     smooth={true}
@@ -56,7 +56,7 @@ const InfoSection = ({
                   >
                     {buttonLabel}
                   </Button>
-                </BtnWrap>
+                </BtnWrap> */}
               </TextWrapper>
             </Column1>
             <Column2>
