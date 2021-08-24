@@ -91,19 +91,19 @@ const Navbar = ({ toggle }) => {
               </NavItem>
               <NavItem>
                 <NavLinks
-                  to="resume"
+                  to="contact"
                   smooth={true}
                   duration={500}
                   spy={true}
                   exact="true"
                   offset={-80}
                 >
-                  Resume{" "}
+                  Contact{" "}
                 </NavLinks>
               </NavItem>
             </NavMenu>
             <NavBtn>
-              <NavBtnLink to="/signin">Sign In</NavBtnLink>
+              <NavBtnLink to="/resume">Resume</NavBtnLink>
             </NavBtn>
           </NavbarContainer>
         </Nav>
