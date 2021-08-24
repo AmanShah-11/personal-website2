@@ -9,9 +9,10 @@ import {
   HeroContainer,
   HeroContent,
   HeroH1,
-  HeroP,
+  HeroAutoType,
   VideoBg,
 } from "./HeroElements";
+import Typical from "react-typical";
 
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
@@ -27,12 +28,26 @@ const HeroSection = () => {
       </HeroBg>
       <HeroContent>
         <HeroH1>Hey, I'm Aman!</HeroH1>
-        <HeroP>Thanks for checking out my website! :)</HeroP>
+        <HeroAutoType
+          loop={Infinity}
+          wrapper="p"
+          steps={[
+            "Aspiring Developer",
+            3000,
+            "Expert Googler",
+            3000,
+            "University Student",
+            3000,
+            "Detroit Lions Fan :)",
+            3000,
+          ]}
+        ></HeroAutoType>
+        {/* <HeroP>Thanks for checking out my website! :)</HeroP> */}
         <HeroBtnWrapper>
           <Button
             to="about"
-            onMouseEnter={() => onHover()}
-            onMouseLeave={() => onHover()}
+            // onMouseEnter={() => onHover()}
+            // onMouseLeave={() => onHover()}
             primary="true"
             dark="true"
           >
