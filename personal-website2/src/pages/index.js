@@ -13,14 +13,17 @@ const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
+    console.log("toggling");
+    console.log("previous");
+    console.log(isOpen);
     setIsOpen(!isOpen);
   };
 
   return (
     <>
-      <Sidebar isOpen={isOpen} toggle={toggle} />
+      {/* <Sidebar isOpen={isOpen} toggle={toggle} /> */}
       <Navbar toggle={toggle} />
-      <HeroSection />
+      <HeroSection isOpen={false} />
       <InfoSection {...homeObjOne} />
       <Projects />
       <Services />
