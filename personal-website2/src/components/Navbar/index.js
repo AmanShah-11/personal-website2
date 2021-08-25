@@ -15,6 +15,8 @@ import {
 } from "./NavbarElements";
 
 const Navbar = ({ toggle }) => {
+  var scroller = scroll.scroller;
+
   const [scrollNav, setScrollNav] = useState(false);
 
   const changeNav = () => {
@@ -41,7 +43,7 @@ const Navbar = ({ toggle }) => {
             <NavLogo
               to="/"
               smooth={true}
-              duration={20}
+              duration={0}
               spy={true}
               exact="true"
               offset={-80}

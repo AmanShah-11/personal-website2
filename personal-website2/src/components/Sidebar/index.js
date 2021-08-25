@@ -27,12 +27,12 @@ const Sidebar = ({ isOpen, toggle }) => {
           <SidebarLink to="projects" onClick={toggle}>
             Projects
           </SidebarLink>
-          <SidebarLink to="signup" onClick={toggle}>
-            Sign up
+          <SidebarLink to="contact" onClick={toggle}>
+            Contact
           </SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
-          <SidebarRoute to="/signin">Sign Up</SidebarRoute>
+          <SidebarRoute to="/resume">Resume</SidebarRoute>
         </SideBtnWrap>
       </SidebarWrapper>
     </SideBarContainer>

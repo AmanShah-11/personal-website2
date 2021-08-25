@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+// import { Sidebar } from "semantic-ui-react";
+import Sidebar from "../components/Sidebar";
 import ContactForm from "../components/Contact";
 import Footer from "../components/Footer";
 import HeroSection from "../components/HeroSection";
@@ -16,7 +18,7 @@ const Home = () => {
 
   return (
     <>
-      {/* <Sidebar isOpen={isOpen} toggle={toggle} /> */}
+      <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroSection />
       <InfoSection {...homeObjOne} />
