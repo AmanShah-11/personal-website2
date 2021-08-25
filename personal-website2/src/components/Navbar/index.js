@@ -93,7 +93,7 @@ const Navbar = ({ toggle }) => {
                 <NavLinks
                   to="contact"
                   smooth={true}
-                  duration={500}
+                  duration={20}
                   spy={true}
                   exact="true"
                   offset={-80}
