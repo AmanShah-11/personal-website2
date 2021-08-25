@@ -132,13 +132,15 @@ export const Projects = () => {
 
   const data = [
     {
-      title: "Work Experience - 4GL (May 2021 - Aug 2021)",
-      description: `Developed 10 interface screens in React with asynchronous CRUD and validation used by 100+ clients \n
-Spearheaded multiprocessing development and optimizedOracledatabase calls to JSON↔excel converters creating Django models 60% faster and reducing memory usage by 70% \n
-Created scalable modals and customized components implemented throughout codebase in React and Bootstrap \n
-Transitioned 50+ models, viewsets, serializers and endpoints from Oracle db to Django through Docker \n
-Produced 15+ pre save and post delete signals for resequencing, validation and updating values in Django \n
-Led pair programming sessions and engaged in code reviews to ensure optimized code and proper code coverage`,
+      title: "Work Experience - 4GL",
+      subtitle: "May 2021 - Aug 2021 | Full Stack Software Developer",
+      description: `At 4GL, I spent my time developing on both the frontend (React) and backend (Python and Django). \n
+I developed 10 interface screens in React with asynchronous CRUD and validation used by 100+ clients \n
+Also, spearheaded multiprocessing development and optimized Oracledatabase calls to JSON↔excel converters creating Django models 60% faster and reducing memory usage by 70% \n
+I created scalable modals and customized components implemented throughout codebase in React and Bootstrap \n
+50+ models, viewsets, serializers and endpoints were transitioned from Oracle db to Django through Docker \n
+15+ pre save and post delete signals were created by me for resequencing, validation and updating values in Django \n
+Finally, I led pair programming sessions and engaged in code reviews to ensure optimized code and proper code coverage`,
       github: "https://github.com/AmanShah-11/django-google",
     },
     {
