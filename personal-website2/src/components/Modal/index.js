@@ -13,7 +13,7 @@ import {
 } from "./ModalElements";
 
 const ProjectModal = ({ showModal, handleClose, data }) => {
-  const { title, description, github, subtitle } = data;
+  const { title, description, github, subtitle, img } = data;
   return (
     <>
       <Modal
@@ -37,7 +37,7 @@ const ProjectModal = ({ showModal, handleClose, data }) => {
         </CustomModalBody>
         <Modal.Footer>
           <FaGithub />
-          <a href={github}>Link to github</a>
+          <a href={github}>Link to website</a>
           <Button variant="btn btn-danger" onClick={handleClose}>
             Close
           </Button>
