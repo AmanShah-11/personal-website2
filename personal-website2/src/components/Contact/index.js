@@ -58,7 +58,7 @@ const ContactForm = () => {
               </Heading>
               <Subtitle darkText={true}>
                 {
-                  "Please provide a detailed description and I'll get back to you as soon as I can"
+                  "Please provide a detailed message and I'll get back to you as soon as I can"
                 }
               </Subtitle>
             </TextWrapper>
