@@ -9,6 +9,7 @@ import fourglImg from "../../images/4gl_sol.jpg";
 import polarImg from "../../images/polar_img.png";
 import caaImg from "../../images/Caa_logo.jpg";
 import eventSchedulerImg from "../../images/eventscheduler.PNG";
+import smileyImg from "../../images/smiley.svg";
 import bankLoanImg from "../../images/bankloan.png";
 
 import ProjectModal from "../Modal";
@@ -66,6 +67,7 @@ The things used to build this application include:
     {
       title: "Facial Recognition System",
       subtitle: "Allows access based on existing users",
+      img: smileyImg,
       description: `I made this project using AWS, Python, Django for the backend system and React for the frontend system. \n
 What this does it that it looks for existing users in the system and sees if the current user matches with the one present. \n
 If a match has occured, the user is allowed into the system, otherwise the user is locked from the system for a certain amount of time.`,
