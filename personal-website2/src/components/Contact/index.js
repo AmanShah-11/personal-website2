@@ -93,7 +93,7 @@ const ContactForm = () => {
                 placeholder="Message…"
                 required
               />
-              <Button type="submit" color="green">
+              <Button type="submit" color="red">
                 Submit
               </Button>
             </Form>
