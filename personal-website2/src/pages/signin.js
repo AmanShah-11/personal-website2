@@ -6,7 +6,8 @@ const SignInPage = () => {
       {/* // <div> */}
       {/* <h1>Sign in Page</h1> */}
       <iframe
-        src={"AmanShah-Resume.pdf"}
+        src={process.env.PUBLIC_URL + "/AmanShah-Resume.pdf"}
+        // src={"/AmanShah-Resume.pdf"}
         style={{
           position: "fixed",
           display: "block",
