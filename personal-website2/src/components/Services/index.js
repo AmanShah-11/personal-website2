@@ -11,6 +11,8 @@ import caaImg from "../../images/Caa_logo.jpg";
 import eventSchedulerImg from "../../images/eventscheduler.PNG";
 import smileyImg from "../../images/smiley.svg";
 import bankLoanImg from "../../images/bankloan.png";
+import studyImg from "../../images/study.svg"
+import learnImg from "../../images/learn.svg"
 
 import ProjectModal from "../Modal";
 import {
@@ -23,6 +25,7 @@ import {
   ServicesIcon,
   ServicesP,
   ServicesWrapper,
+  ServicesWrapperProject
 } from "./ServicesElements";
 
 const Services = () => {
@@ -92,6 +95,20 @@ The machine learning model takes in 13 different factors from the user including
   Property_Area`,
       github: "https://github.com/AmanShah-11/django_bankloan",
     },
+    {
+      title: "Study App",
+      subtitle: "Transcribe videos for studying!",
+      img: learnImg,
+      description: `This was our project submission for Hack The North 2020!
+Our app allows the user to upload a .mp3 file and then input a "keyword". The video will then be transcribed into a script and then the timestamp associated with the word will then be outputted to the application.
+
+I created the Google Cloud Project, associated bucket and scripts to automatically upload files to the cloud and then have those videos transcribed
+
+Additionally, I created the backend API was created using Django and Django Rest Framework to make API calls to Google Cloud, specifically the Google Speech to Text APIs and calls to upload the .mp3 file to a bucket in google cloud (if the file is longer than 1 minute long then google requires it to be placed in the bucket).
+
+Here's a demo of how our project works!`,
+      github: "https://github.com/AmanShah-11/django_api_google_cloud/",
+    },
   ];
 
   return (
@@ -103,7 +120,7 @@ The machine learning model takes in 13 different factors from the user including
       />
       <ServicesContainer id="projects">
         <ServicesH1>My Projects</ServicesH1>
-        <ServicesWrapper>
+        <ServicesWrapperProject>
           <ServicesCard onClick={() => handleShow(0)}>
             <ServicesIcon src={Icon4} />
             <ServicesH2>Automatic Event Scheduler</ServicesH2>
@@ -123,7 +140,12 @@ The machine learning model takes in 13 different factors from the user including
             <ServicesH2>Bank Loan Approval System</ServicesH2>
             <ServicesP>See if you would be approved for a bank loan!</ServicesP>
           </ServicesCard>
-        </ServicesWrapper>
+          <ServicesCard onClick={() => handleShow(3)}>
+            <ServicesIcon src={studyImg} />
+            <ServicesH2>Study App</ServicesH2>
+            <ServicesP>Transcribe your videos for easier studying!</ServicesP>
+          </ServicesCard>
+        </ServicesWrapperProject>
       </ServicesContainer>
     </>
   );
