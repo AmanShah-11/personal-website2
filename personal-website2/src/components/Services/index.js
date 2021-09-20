@@ -5,14 +5,16 @@ import Icon6 from "../../images/svg-6.svg";
 import Icon7 from "../../images/svg-7.svg";
 import Icon8 from "../../images/svg-8.svg";
 import Icon9 from "../../images/svg-9.svg";
+import Icon10 from "../../images/svg-10.svg";
 import fourglImg from "../../images/4gl_sol.jpg";
 import polarImg from "../../images/polar_img.png";
 import caaImg from "../../images/Caa_logo.jpg";
 import eventSchedulerImg from "../../images/eventscheduler.PNG";
 import smileyImg from "../../images/smiley.svg";
 import bankLoanImg from "../../images/bankloan.png";
-import studyImg from "../../images/study.svg"
-import learnImg from "../../images/learn.svg"
+import studyImg from "../../images/study.svg";
+import learnImg from "../../images/learn.svg";
+import homePage from "../../images/homepage.PNG";
 
 import ProjectModal from "../Modal";
 import {
@@ -25,7 +27,7 @@ import {
   ServicesIcon,
   ServicesP,
   ServicesWrapper,
-  ServicesWrapperProject
+  ServicesWrapperProject,
 } from "./ServicesElements";
 
 const Services = () => {
@@ -96,6 +98,22 @@ The machine learning model takes in 13 different factors from the user including
       github: "https://github.com/AmanShah-11/django_bankloan",
     },
     {
+      title: "Species Prediction Model",
+      subtitle: "Predict a species",
+      img: homePage,
+      description: `I built this application to gain some insight into using Redux and building a full stack app to predict a species type based on its dimensions using a machine learning model.
+The application takes in information from sliders and uses the machine learning model to predict the species
+In order to have access to the APIs for the machine learning model, you must login to your account (access to APIs are restricted to authenticated users).   
+Users have the option to change their password in the password change endpoint. 
+The backend for this was built in Python and Django, while the frontend was made in React and Redux
+The tools/technologies that I used include:
+  Python
+  Django
+  React
+  Redux`,
+      github: "https://github.com/AmanShah-11/django_api_google_cloud/",
+    },
+    {
       title: "Study App",
       subtitle: "Transcribe videos for studying!",
       img: learnImg,
@@ -141,6 +159,11 @@ Here's a demo of how our project works!`,
             <ServicesP>See if you would be approved for a bank loan!</ServicesP>
           </ServicesCard>
           <ServicesCard onClick={() => handleShow(3)}>
+            <ServicesIcon src={Icon10} />
+            <ServicesH2>Species Prediction Model</ServicesH2>
+            <ServicesP>Predict a species</ServicesP>
+          </ServicesCard>
+          <ServicesCard onClick={() => handleShow(4)}>
             <ServicesIcon src={studyImg} />
             <ServicesH2>Study App</ServicesH2>
             <ServicesP>Transcribe your videos for easier studying!</ServicesP>
@@ -232,3 +255,14 @@ Developed automated directory sorting and storage, and a weekly email script of 
 };
 
 export default Services;
+
+// I built this application to gain some insight into using Redux and building a full stack app to predict a species type based on its dimensions using a machine learning model.
+// The application takes in information from sliders and uses the machine learning model to predict the species
+// In order to have access to the APIs for the machine learning model, you must login to your account (access to APIs are restricted to authenticated users).
+// Users have the option to change their password in the password change endpoint.
+// The backend for this was built in Python and Django, while the frontend was made in React and Redux
+// The tools/technologies that I used include:
+//   Python
+//   Django
+//   React
+//   Redux
