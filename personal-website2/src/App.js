@@ -8,8 +8,7 @@ import "semantic-ui-css/semantic.min.css";
 
 function App() {
   return (
-    // <Router basename={process.env.PUBLIC_URL}>
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route path={"/"} element={<Home />}/>
           <Route path={"/resume"} element={<SignInPage />}/>
