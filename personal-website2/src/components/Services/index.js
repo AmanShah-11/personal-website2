@@ -6,6 +6,8 @@ import Icon7 from "../../images/svg-7.svg";
 import Icon8 from "../../images/svg-8.svg";
 import Icon9 from "../../images/svg-9.svg";
 import Icon10 from "../../images/svg-10.svg";
+import Icon11 from "../../images/svg-11.svg";
+import soneroImg from "../../images/sonero.png"
 import fourglImg from "../../images/4gl_sol.jpg";
 import polarImg from "../../images/polar_img.png";
 import caaImg from "../../images/Caa_logo.jpg";
@@ -190,9 +192,29 @@ export const Projects = () => {
 
   const data = [
     {
+      title: "Work Experience - Sonero",
+      subtitle: "Jan 2022 - Apr 2022 | Full Stack Software Developer Intern",
+      img: soneroImg,
+      description: `At Sonero, I spent my time developing on both the frontend (React) and backend (Python and Django). \n
+I spent a lot of my time spearheading a calendar integration workflow that would allow our meeting bot to automatically join meetings in someone's online calendar. \n
+Additionally, I spent time creating the automatic logging of metrics and metric tables in Django and React \n
+Finally I created a feature that allowed our meeting bot to instantly join meetings using AWS and Python.`,
+      github: "https://sonero.ai//",
+    },
+    {
       title: "Work Experience - 4GL",
       subtitle: "May 2021 - Aug 2021 | Full Stack Software Developer Intern",
       img: fourglImg,
+      description: `At Sonero, I spent my time developing on both the frontend (React) and backend (Python and Django). \n
+I spent a lot of my time spearheading a calendar integration workflow that would allow our meeting bot to automatically join meetings in someone's online calendar. \n
+Additionally, I spent time creating the automatic logging of metrics and metric tables in Django and React \n
+Finally I created a feature that allowed our meeting bot to instantly join meetings using AWS and Python.`,
+      github: "https://4glsol.com/",
+    },
+    {
+      title: "Work Experience - Polar",
+      subtitle: "Sep 2020 - Dec 2020 | Software Developer Intern",
+      img: polarImg,
       description: `At 4GL, I spent my time developing on both the frontend (React) and backend (Python and Django). \n
 I developed 10 interface screens in React with asynchronous CRUD and validation used by 100+ clients \n
 Also, spearheaded multiprocessing development and optimized Oracledatabase calls to JSON↔excel converters creating Django models 60% faster and reducing memory usage by 70% \n
@@ -200,16 +222,6 @@ I created scalable modals and customized components implemented throughout codeb
 50+ models, viewsets, serializers and endpoints were transitioned from Oracle db to Django through Docker \n
 15+ pre save and post delete signals were created by me for resequencing, validation and updating values in Django \n
 Finally, I led pair programming sessions and engaged in code reviews to ensure optimized code and proper code coverage`,
-      github: "https://4glsol.com/",
-    },
-    {
-      title: "Work Experience - Polar",
-      subtitle: "Sep 2020 - Dec 2020 | Software Developer Intern",
-      img: polarImg,
-      description: `Introduced Python, Selenium and Django testing guideline for Django objects, serializers, forms and ads \n
-Demoed features to managers and coworkers to explain design decisions and quickly iterate on feedback \n
-Reduced ticket workflow coverage by 30% by actively completing tickets with hard deadlines \n
-Raised specific issues in Jira, and trust to be involved in code reviews to provide meaningful feedback`,
       github: "https://www.createwithpolar.com/",
     },
     {
@@ -233,17 +245,22 @@ Developed automated directory sorting and storage, and a weekly email script of 
       <ProjectsContainer id="work">
         <ProjectsH1>Work Experience</ProjectsH1>
         <ServicesWrapper>
-          <ServicesCard onClick={() => handleShow(0)}>
+        <ServicesCard onClick={() => handleShow(0)}>
+            <ServicesIcon src={Icon11} />
+            <ServicesH2>Sonero</ServicesH2>
+            <ServicesP>Full Stack Software Developer Intern</ServicesP>
+          </ServicesCard>
+          <ServicesCard onClick={() => handleShow(1)}>
             <ServicesIcon src={Icon7} />
             <ServicesH2>4GL</ServicesH2>
             <ServicesP>Full Stack Software Developer Intern</ServicesP>
           </ServicesCard>
-          <ServicesCard onClick={() => handleShow(1)}>
+          <ServicesCard onClick={() => handleShow(2)}>
             <ServicesIcon src={Icon8} />
             <ServicesH2>Polar</ServicesH2>
             <ServicesP>Software Developer Intern</ServicesP>
           </ServicesCard>
-          <ServicesCard onClick={() => handleShow(2)}>
+          <ServicesCard onClick={() => handleShow(3)}>
             <ServicesIcon src={Icon9} />
             <ServicesH2>CAA</ServicesH2>
             <ServicesP>Software Developer Intern</ServicesP>

@@ -9,8 +9,9 @@ export const homeObjOne = {
   lightTextDesc: true,
   topLine: "Learn more:",
   headline: "About Me!",
-  description: `I'm a 2nd year Computer Engineering student at the University of Waterloo. \n
-I focus on development in Python and enjoy using the React and Django frameworks.`,
+  description: `I'm a 4th year Computer Engineering student at the University of Waterloo. \n
+I enjoy doing full stack and back end development, as well as learning new languages and frameworks. \n
+During my free time, I enjoy watching football and participating in fantasy sports.`,
   buttonLabel: "Get started",
   imgStart: false,
   img: img1,
