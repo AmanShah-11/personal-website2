@@ -8,13 +8,13 @@ import "semantic-ui-css/semantic.min.css";
 
 function App() {
   return (
-    <h1>Test123</h1>
-    // <Router basename={process.env.PUBLIC_URL}>
-    //     <Routes>
-    //       <Route path={"/"} element={<Home />}/>
-    //       <Route path={"/resume"} element={<SignInPage />}/>
-    //     </Routes>
-    // </Router>
+    // <h1>Test123</h1>
+    <Router basename={process.env.PUBLIC_URL}>
+        <Routes>
+          <Route path={"/"} element={<Home />}/>
+          <Route path={"/resume"} element={<SignInPage />}/>
+        </Routes>
+    </Router>
   );
 }
 
